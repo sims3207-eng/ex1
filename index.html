@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dangjin Travel Guide | Discover Chungnam's Coastal Charm</title>
+  <meta name="description" content="Official foreigner travel companion for Dangjin, Chungcheongnam-do, Korea. Explore sunset beaches, historical shrines, seafood dining, and transit guides.">
+  
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Application Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="container header-content">
+      <a href="#" class="logo">
+        <i class="fa-solid fa-compass" style="color: #f97316;"></i>
+        <span>VISIT DANGJIN</span>
+        <span class="logo-badge">Korea</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#destinations" class="nav-link" data-i18n="filterAll">Attractions</a></li>
+        <li><a href="#itinerary" class="nav-link" data-i18n="itineraryHeading">Itineraries</a></li>
+        <li><a href="#food" class="nav-link" data-i18n="foodHeading">Food Guide</a></li>
+        <li><a href="#survival" class="nav-link" data-i18n="survivalHeading">Korean Phrases</a></li>
+        <li><a href="#transit" class="nav-link" data-i18n="transitHeading">Getting Here</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <select id="langSelect" class="lang-selector" aria-label="Select Language">
+          <option value="en">English (EN)</option>
+          <option value="ko">한국어 (KO)</option>
+          <option value="ja">日本語 (JA)</option>
+          <option value="zh">中文 (ZH)</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="container">
+      <div class="hero-pill">
+        <i class="fa-solid fa-sparkles"></i>
+        <span data-i18n="heroPill">✨ Official Foreign Traveler Companion</span>
+      </div>
+      <h1 data-i18n="heroTitle">
+        Discover the Coastal Serenity of <span class="text-gradient">Dangjin</span>
+      </h1>
+      <p data-i18n="heroSubtitle">
+        Explore historic shrines, vintage seaside piers, dynamic sunrise coasts, and rich regional culinary treasures in Chungcheongnam-do, Korea.
+      </p>
+
+      <!-- Key Quick Stats -->
+      <div class="quick-stats">
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-bolt"></i></div>
+          <div>
+            <div class="stat-title" data-i18n="stat1Label">Fast Transit</div>
+            <div class="stat-val" data-i18n="stat1Val">1h 30m from Seoul</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-camera-retro"></i></div>
+          <div>
+            <div class="stat-title" data-i18n="stat2Label">Top Wonders</div>
+            <div class="stat-val" data-i18n="stat2Val">6 Must-Visit Spots</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-water"></i></div>
+          <div>
+            <div class="stat-title" data-i18n="stat3Label">Coastline</div>
+            <div class="stat-val" data-i18n="stat3Val">East & West Ocean Vistas</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-utensils"></i></div>
+          <div>
+            <div class="stat-title" data-i18n="stat4Label">Specialty</div>
+            <div class="stat-val" data-i18n="stat4Val">Haenaru Rice & Fresh Clams</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Attractions Section -->
+  <section id="destinations" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Explore & Discover</span>
+        <h2 class="section-title" data-i18n="destinationsHeading">Top Tourist Destinations</h2>
+        <p class="section-subtitle" data-i18n="destinationsSubheading">
+          Curated must-visit highlights with foreigner-friendly tips and navigation guides
+        </p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="filter-bar">
+        <div class="filter-pills">
+          <button class="filter-btn active" data-category="all" data-i18n="filterAll">All Attractions</button>
+          <button class="filter-btn" data-category="nature" data-i18n="filterNature">Nature & Seas</button>
+          <button class="filter-btn" data-category="culture" data-i18n="filterCulture">Culture & Heritage</button>
+          <button class="filter-btn" data-category="attraction" data-i18n="filterAttraction">Fun & Theme Parks</button>
+        </div>
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="searchInput" placeholder="Search attractions, vibes, foods...">
+        </div>
+      </div>
+
+      <!-- Cards Grid -->
+      <div id="destinationsGrid" class="destinations-grid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommended Itineraries Section -->
+  <section id="itinerary" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Smart Travel Plans</span>
+        <h2 class="section-title" data-i18n="itineraryHeading">Recommended Itineraries</h2>
+        <p class="section-subtitle" data-i18n="itinerarySubheading">
+          Step-by-step curated travel courses designed for day-trippers and coastal explorers
+        </p>
+      </div>
+
+      <div class="itinerary-section">
+        <div class="itinerary-tabs">
+          <button class="tab-btn active" data-tab="daytrip" data-i18n="tabDaytrip">
+            1-Day Classic Heritage & Pier
+          </button>
+          <button class="tab-btn" data-tab="coastal" data-i18n="tabCoastal">
+            Scenic Nature & Romantic Coastline
+          </button>
+        </div>
+        <div id="itineraryTimeline" class="timeline">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Culinary Section -->
+  <section id="food" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Taste of the West Coast</span>
+        <h2 class="section-title" data-i18n="foodHeading">Signature Flavors of Dangjin</h2>
+        <p class="section-subtitle" data-i18n="foodSubheading">
+          Authentic gastronomic experiences you won't find anywhere else
+        </p>
+      </div>
+
+      <div id="foodGrid" class="food-grid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Travel Phrases for Foreigners -->
+  <section id="survival" class="section">
+    <div class="container">
+      <div class="survival-box">
+        <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+          <span class="section-tag">Communication Helper</span>
+          <h2 class="section-title" style="font-size: 1.8rem;" data-i18n="survivalHeading">Essential Korean Travel Phrases</h2>
+          <p class="section-subtitle" data-i18n="survivalSubheading">
+            Tap any phrase to copy or pronounce with ease
+          </p>
+        </div>
+
+        <div id="phrasesGrid" class="phrase-grid">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transportation Guide -->
+  <section id="transit" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Directions & Transit</span>
+        <h2 class="section-title" data-i18n="transitHeading">How to Get to & Around Dangjin</h2>
+        <p class="section-subtitle" data-i18n="transitSubheading">
+          Stress-free directions from Seoul, Incheon Airport, and local taxi guides
+        </p>
+      </div>
+
+      <div id="transitGrid" class="transport-grid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="#destinations" class="footer-link">Attractions</a>
+        <a href="#itinerary" class="footer-link">Itineraries</a>
+        <a href="#food" class="footer-link">Food</a>
+        <a href="#transit" class="footer-link">Transportation</a>
+      </div>
+      <p>© 2026 Visit Dangjin - Smart Companion for International Travelers. All rights reserved.</p>
+      <p style="margin-top: 6px; font-size: 0.8rem; color: var(--text-dim);">
+        Pure Client-Side Vanilla Web App (HTML5 / CSS3 / JavaScript). No server installation required.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Detail Modal -->
+  <div id="detailModal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close" aria-label="Close modal">&times;</button>
+      <div id="modalBody" class="modal-body">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">
+    <i class="fa-solid fa-circle-check" style="color: #f97316;"></i>
+    <span id="toastMsg">Notification message</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
