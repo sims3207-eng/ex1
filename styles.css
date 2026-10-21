@@ -155,6 +155,31 @@ body {
   gap: 12px;
 }
 
+.btn-cityhall {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(249, 115, 22, 0.15);
+  border: 1px solid rgba(249, 115, 22, 0.4);
+  color: #fb923c;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+
+.btn-cityhall:hover {
+  background: var(--gradient-sunset);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 4px 14px rgba(249, 115, 22, 0.4);
+  transform: translateY(-1px);
+}
+
 .lang-selector {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid var(--border-glass);

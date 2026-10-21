@@ -35,7 +35,8 @@ const APP_DATA = {
       },
       tags: ["Sunrise", "Sunset", "Ocean Walk", "Seafood"],
       coords: { lat: 37.0371, lng: 126.5412 },
-      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+      fallbackImage: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80"
     },
     {
       id: "solmoe",
@@ -136,7 +137,8 @@ const APP_DATA = {
       },
       tags: ["Ferris Wheel", "Amusement Park", "Warship Museum", "Seafood Market"],
       coords: { lat: 36.8895, lng: 126.8202 },
-      image: "https://images.unsplash.com/photo-1513889961551-628c1e5e2ee9?auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1513889961551-628c1e5e2ee9?auto=format&fit=crop&w=800&q=80",
+      fallbackImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
     },
     {
       id: "shinri",
@@ -169,7 +171,8 @@ const APP_DATA = {
       },
       tags: ["Architecture", "Peaceful", "Viewpoint", "Historic"],
       coords: { lat: 36.8285, lng: 126.7904 },
-      image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
+      fallbackImage: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
     },
     {
       id: "agroland",
@@ -202,7 +205,8 @@ const APP_DATA = {
       },
       tags: ["Nature", "Animals", "Flower Field", "Family Friendly"],
       coords: { lat: 36.8122, lng: 126.6975 },
-      image: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=80",
+      fallbackImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
     }
   ],
 
@@ -427,7 +431,7 @@ const APP_DATA = {
           en: "Watch the sun melt into the West Sea from the uniquely situated peninsula beach.",
           ko: "서해에서 가장 신비로운 일몰을 마주하고 해변가 카페에서 여유를 만끽합니다.",
           ja: "西海随一の美しい夕陽を眺め、波の音を聞きながらカフェでリラックス。",
-          zh: "在韩国著名的东西两景半岛海滩等待夕阳坠入西海，度过浪漫夜晚。"
+          zh: "在韩国著名的东西两景半岛海滩等待夕阳坠入西海，度过浪漫夜晚."
         }
       }
     ]
@@ -560,7 +564,8 @@ const UI_TEXTS = {
     btnCopy: "Copy",
     copied: "Copied to clipboard!",
     favoriteAdded: "Saved to your favorites!",
-    favoriteRemoved: "Removed from favorites."
+    favoriteRemoved: "Removed from favorites.",
+    cityHallBtn: "Dangjin City Hall"
   },
   ko: {
     heroPill: "✨ 외국인 여행객을 위한 당진 가이드",
@@ -596,7 +601,8 @@ const UI_TEXTS = {
     btnCopy: "복사",
     copied: "클립보드에 복사되었습니다!",
     favoriteAdded: "즐겨찾기에 저장되었습니다!",
-    favoriteRemoved: "즐겨찾기에서 해제되었습니다."
+    favoriteRemoved: "즐겨찾기에서 해제되었습니다.",
+    cityHallBtn: "당진시청 바로가기"
   },
   ja: {
     heroPill: "✨ 唐津（ダンジン）外国人旅行者向けガイド",
@@ -632,7 +638,8 @@ const UI_TEXTS = {
     btnCopy: "コピー",
     copied: "クリップボードにコピーしました！",
     favoriteAdded: "お気に入りに追加しました！",
-    favoriteRemoved: "お気に入りから削除しました。"
+    favoriteRemoved: "お気に入りから削除しました。",
+    cityHallBtn: "唐津市庁 公式サイト"
   },
   zh: {
     heroPill: "✨ 当津外国游客中文旅行指南",
@@ -668,6 +675,7 @@ const UI_TEXTS = {
     btnCopy: "复制",
     copied: "已复制到剪贴板！",
     favoriteAdded: "已加入收藏夹！",
-    favoriteRemoved: "已从收藏夹移除。"
+    favoriteRemoved: "已从收藏夹移除。",
+    cityHallBtn: "当津市政厅官网"
   }
 };
